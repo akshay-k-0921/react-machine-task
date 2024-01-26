@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+// components 
 import DashBoard from './components/DashBoard';
 import SideBar from './components/SideBar';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import CommingSoon from './components/CommingSoon';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           element={<Navigate to="/dashboard" />}
         />
         <Route path='dashboard' element={<DashBoard />} />
+        <Route path='support' element={<CommingSoon />} />
+        <Route path='plugins' element={<CommingSoon />} />
+        <Route path='help' element={<CommingSoon />} />
       </Routes>
       </Container>
     </Router>
