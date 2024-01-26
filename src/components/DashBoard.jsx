@@ -1,24 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
+// Importing Components 
+import Header from './Includes/Header'
 
 function DashBoard() {
   return (
     <MainContainer>
         <TopContainer>
-            <Greetins>
-                <Text>Good Morning !</Text>
-                <Icon />
-            </Greetins>
-            <Profile>
-                <ProfileText>
-                    <Name>John Doe</Name>
-                    <Email>john@doe.com</Email>
-                </ProfileText>
-                <ProfileImage>
-                    <Image />
-                </ProfileImage>
-            </Profile>
+            <Header />
         </TopContainer>
         <MiddleContainer>
 
@@ -34,28 +24,12 @@ export default DashBoard
 
 const MainContainer = styled.div`
     width: 85%;
-    background: #000;
+    background: #b2cada;
+    padding: 20px 50px 0;
 `
 
-const TopContainer = styled.div``
-
-const Greetins = styled.div``
-
-const Text = styled.h4``
-
-const Icon = styled.img``
-
-const Profile = styled.div``
-
-const ProfileText = styled.span``
-
-const Name = styled.p``
-
-const Email = styled.p``
-
-const ProfileImage = styled.span``
-
-const Image = styled.image``
+const TopContainer = styled.div`
+`
 
 const MiddleContainer = styled.div``
 
