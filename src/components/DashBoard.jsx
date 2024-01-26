@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 // Importing Components 
@@ -6,6 +6,7 @@ import Header from './Includes/Header'
 import Graph from './Includes/Graph'
 import PieChart from './Includes/PieChart'
 import Table from './Includes/Table'
+import ProfileCard from './Includes/ProfileCard'
 
 function DashBoard() {
 
@@ -28,6 +29,9 @@ function DashBoard() {
             <TableContainer>
                 <Table />
             </TableContainer>
+            <ProfileContainer>
+                <ProfileCard />
+            </ProfileContainer>
         </BotttomContainer>
     </MainContainer>
   )
@@ -42,13 +46,13 @@ const MainContainer = styled.div`
 `
 
 const TopContainer = styled.div`
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 `
 
 const MiddleContainer = styled.div`
     display: flex;
     gap: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 `
 
 const PieChartContainer = styled.div`
@@ -70,10 +74,15 @@ const GraphContainer = styled.div`
 `
 
 
-const BotttomContainer = styled.div``
-
-const TableContainer = styled.div`
-    width: 75%;
+const BotttomContainer = styled.div`
+    display: flex;
+    gap: 20px;
 `
 
+const TableContainer = styled.div`
+    width: 77%;
+`
 
+const ProfileContainer = styled.div`
+    width: 20%;
+`
