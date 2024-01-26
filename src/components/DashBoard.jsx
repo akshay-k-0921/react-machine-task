@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Header from './Includes/Header'
 import Graph from './Includes/Graph'
 import PieChart from './Includes/PieChart'
+import Table from './Includes/Table'
 
 function DashBoard() {
 
@@ -24,7 +25,9 @@ function DashBoard() {
             </PieChartContainer>
         </MiddleContainer>
         <BotttomContainer>
-
+            <TableContainer>
+                <Table />
+            </TableContainer>
         </BotttomContainer>
     </MainContainer>
   )
@@ -45,6 +48,7 @@ const TopContainer = styled.div`
 const MiddleContainer = styled.div`
     display: flex;
     gap: 50px;
+    margin-bottom: 50px;
 `
 
 const PieChartContainer = styled.div`
@@ -67,5 +71,9 @@ const GraphContainer = styled.div`
 
 
 const BotttomContainer = styled.div``
+
+const TableContainer = styled.div`
+    width: 75%;
+`
 
 
